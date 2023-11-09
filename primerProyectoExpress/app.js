@@ -9,6 +9,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const ejemploRouter = require('./routes/ejemplo')
+const perfilRouter = require('./routes/perfil')
 
 //Decirle a la app que va a utilizar express
 var app = express();
@@ -32,6 +33,7 @@ app.use('/ejemplo', ejemploRouter)
 //Ejercicio
 //Realizar un enrutamiento que sea /perfil en donde muestren su informacion
 //Por ejemplo: Nombre, edad, carrera, gustos...
+app.use('/perfil', perfilRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
