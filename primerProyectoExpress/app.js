@@ -8,6 +8,7 @@ var logger = require('morgan');
 //Importación de los enrutamientos
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const ejemploRouter = require('./routes/ejemplo')
 
 //Decirle a la app que va a utilizar express
 var app = express();
@@ -27,6 +28,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Usar las rutas importadas
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/ejemplo', ejemploRouter)
+//Ejercicio
+//Realizar un enrutamiento que sea /perfil en donde muestren su informacion
+//Por ejemplo: Nombre, edad, carrera, gustos...
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

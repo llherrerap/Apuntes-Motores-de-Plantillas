@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Curso Desarrollo Web Backend Intermedio :)' });
 });
 
-router.get('/ejemplo', (req, res) =>{
+router.get('/ejemploIndex', (req, res) =>{
   res.send('Enrutamiento de prueba en mi proyecto')
 })
 
