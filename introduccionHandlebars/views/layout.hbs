@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html>
   <head>
     <title>{{title}}</title>
@@ -7,4 +7,27 @@
   <body>
     {{{body}}}
   </body>
+</html> --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina para dar introducción a Handlebars">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Introducción a Handlebars</title>
+</head>
+<body>
+  <header>
+    <h2>Clase de Introducción a Handlebars</h2>
+    <p>Estamos en la pagina de: {{nombre}}</p>
+  </header>
+  <main>
+    {{!-- Lo que hace {{{body}}} es agregar como componente los otros archivos hbs --}}
+    {{{body}}}
+  </main>
+  <footer>
+    <h2>Todos los derechos reservados. Curso desarrollo web</h2>
+  </footer>
+</body>
 </html>
