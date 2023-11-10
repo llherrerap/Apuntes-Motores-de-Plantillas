@@ -3,7 +3,15 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Enrutamiento para usuarios');
+  const usuarios = [
+    { nombre: 'Juanito', edad: 21},
+    { nombre: 'Pepita', edad: 15},
+    { nombre: 'Fulanito', edad: 37},
+    { nombre: 'Maria', edad: 57},
+    { nombre: 'Juanito', edad: 21},
+    { nombre: 'Pepita', edad: 15}
+  ]
+  res.render('usuarios', { usuarios } )
 });
 
 router.get('/subruta-users', (req, res) => {
