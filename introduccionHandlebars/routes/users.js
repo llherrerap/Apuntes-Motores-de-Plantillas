@@ -9,7 +9,19 @@ router.get('/', function(req, res, next) {
     { nombre: 'Fulanito', edad: 37},
     { nombre: 'Maria', edad: 57},
     { nombre: 'Juanito', edad: 21},
-    { nombre: 'Pepita', edad: 15}
+    { nombre: 'Pepita', edad: 15},
+    { nombre: 'Juanito', edad: 21},
+    { nombre: 'Pepita', edad: 15},
+    { nombre: 'Fulanito', edad: 37},
+    { nombre: 'Maria', edad: 57},
+    { nombre: 'Juanito', edad: 21},
+    { nombre: 'Pepita', edad: 15},
+    { nombre: 'Juanito', edad: 21},
+    { nombre: 'Pepita', edad: 15},
+    { nombre: 'Fulanito', edad: 37},
+    { nombre: 'Maria', edad: 57},
+    { nombre: 'Juanito', edad: 21},
+    { nombre: 'Pepita', edad: 15} 
   ]
   res.render('usuarios', { usuarios } )
 });
