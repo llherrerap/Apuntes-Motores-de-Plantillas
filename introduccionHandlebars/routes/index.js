@@ -13,7 +13,8 @@ router.get('/', function(req, res, next) {
     profesor: 'Liliana Herrera',
     correo: 'lherrera@udistrital.edu.co',
     horario: 'L-V 7:00PM a 9:30PM',
-    institucion: 'Universidad Distrital Francisco José de Caldas'
+    institucion: 'Universidad Distrital Francisco José de Caldas',
+    fecha_finalizacion: '2023-12-08 00:00:00.000'
   }
   res.render('index', curso)
 });
